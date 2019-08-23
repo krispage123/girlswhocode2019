@@ -1,0 +1,91 @@
+<!--NEVER FORGET THIS-->
+<!DOCTYPE html>
+<!--opening tags-->
+<html>
+<head>
+
+
+  <style>
+  h1{
+       color: #379B9B1
+  }
+  * {box-sizing: border-box}
+  body {
+    font-family: Verdana, sans-serif;
+    margin:0
+  }
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+  </style>
+
+<h1>
+  <!-- wow ooh -->
+  Blog of Taipei!
+</h1>
+<h2>
+  I hope I can convince you to come visit!
+</h2>
+<style>
+
+</style>
+</head>
+<body bgcolor= #79B9B1>
+<center>
+
+<b3>
+  So Taipei, the capital of Taiwan, is a modern metropolis with busy shopping streets and contemporary buildings. The skyline is crowned by the 509m-tall, bamboo-shaped Taipei 101 skyscraper, with upscale shops at the base and a rapid elevator to an observatory near the top. Taipei is also known for its lively street-food scene and many night markets, including expansive Shilin market.
+</b3>
+
+<<p>  I like to think of Taiwan as the "Home of Boba" sometimes</p>
+
+
+
+<p3></<p>
+  My favorite thing about Taiwan are the night markets such as Ximending Market, Shilin Market, and Raohe Market
+<b3>
+I also took the train to Shifen Station to relase light lanterns on the railroad tracks.  You can choose your own colored lantern where each color represents something different and write your wishes onto it.
+
+
+<div class="w3-center" Style="max-width:500px">
+  <img class="mySlides" src="101tower.jpg" style="width:100%">
+  <img class="mySlides" src="boba.jpg" style="width:75%">
+  <img class="mySlides" src="nightmarket.jpg" style="width:100%">
+  <img class="mySlides" src="lantern.jpg" style="width:100%">
+
+</center>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel()  {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none" ;
+  }
+  myIndex++;
+  if(myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // change image 2 seconds
+}
+
+</script>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</html>
